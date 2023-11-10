@@ -3,7 +3,7 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 67
+      - offset: 69
         length: 38
         placeholder_text: |-
           println("Hello,")
@@ -12,8 +12,8 @@ files:
           length: 38
           offset: 67
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: qDXRIskLetSSUoj/gkBc5Idd8HpqEY3Y7lMI99wP1JwIkC1GfHssxCBRTfV9VyKN
     encrypted_text: WzMLgow9eqOQ1CEhzmhZ7Kc0OKP4Lr/D+wVLm0NUvI3iT0p5kuh1KPGuy+iQ+SIcsIbMJL3x8ZsjvWrH0z73FQ8ljDh/nYcqr879ALecJ3cmlUGlBYvbzHJTp9QfqIL44YGwq21Uh0gytAv3ZtG0hg==
     learner_created: false
@@ -21,5 +21,8 @@ files:
     visible: false
     encrypted_text: vCWGpH5YJO5rf2OEsmpgSQ==
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 10 Nov 2023 15:59:01 UTC"
 record: -1
