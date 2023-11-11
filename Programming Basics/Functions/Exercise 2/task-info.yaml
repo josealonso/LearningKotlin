@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 104
-        length: 6
+        length: 9
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 104
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: V0Q6gqqvAlodHVm5jPkWNA==
     encrypted_text: P2TNWzrkldotOjhf49bLKqTuFKlaLoVhAelDiLtrEWI6pKhRSU1lUMXmns/yBIWm13RwjWt5N2kRn4CT+JuFD6XVIC6bn2xQf9QXIUlfctMQNqqvAeiGlsfXYDKlqgYFRFILFJJK3cbNWqdrWd+cS9EP7z4Jyq3bQgMnmvY1lIz0u9T/zW0hHv1exLSSwbSl4DSqQD/XEmvvHw0y3on1+7o/vv0hNQX0GVRIKdlLZ1M=
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Functions+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 11 Nov 2023 00:13:22 UTC"
 record: -1
