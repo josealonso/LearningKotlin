@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 104
-        length: 6
+        length: 39
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 104
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: peu/3M8/pacEMgXCzZgl9TAaf65uekKAfr8MzOdfmnh/xiE7NIWI7T/Rb92oIel8
     encrypted_text: YWqxkEfP+VuLmRq3ckggmYD7zR0DYmrBeam8m/Uw9MGYRamwYzdMpalo1iL6Zubu2pLSa4asP8WE6A37LEKmO2gbucFJn1QM+xVXGOFMK1doweTchD7Oav5U3fPJR/1j/qnu64uyno7URUaRbQ9j2068rJBLgXhh0AWPCxdUU0WR0jToVCF04VYDMX1K+2aoqmNrrTYpxLcoOeErrpzIpg==
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+if+Expressions+%2F+Exercise3
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 11 Nov 2023 16:48:15 UTC"
 record: -1
