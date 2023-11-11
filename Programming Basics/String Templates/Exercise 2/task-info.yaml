@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 130
-        length: 6
+        length: 29
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 130
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: 1zejICQsovo7x+TayI/P3rRIZxm+9InF1ZbWG82GO4Q=
     encrypted_text: ziGQOjgkKm7dlGET51GACKiOWnJL2TJkxKM8evY/WBoK4pJWM7eofCdK1+7yHhNcFzIDtlFpAwWnNV+SxoUNgP0z7Dva39sLjBjGLz2Kt0n2C706KSX1xL2rlKJ5cA9XHq18IAemUanUDvCNca5se0X7KvV6Ty4TBG5hzaGXURKbKDyfemnm8K4QynuaZbV9PaR/2YX+pZhCokk2nhk6NMEF7bhe86TepzJrY5S3iuxrdwcLjBUbxDTPf4vxrHStisVypAt0dOHYsmQhV8fLPPlIJSZdWpdF5mB+yHl5UZt0tv8AGKxgE6dZ8y5G1wjq9E96bbyUq0IZMfrzNVZKQF273a0M1txc35RdpqtuxgEHTtmiyrfbgItHkL4IpiC804tG51w/Jll9wT2ZtL+DCmfGUKuXi/Y2DxeEMTAeWHdFebcA9C4UJC4ufT+JIt+D
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+String+Templates+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sat, 11 Nov 2023 17:00:05 UTC"
 record: -1
