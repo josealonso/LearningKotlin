@@ -1,6 +1,7 @@
 // DataTypes/Task4.kt
 package dataTypesExercise4
 
+// Type Inference
 fun main() {
   val whole = 11
   val fractional = 1.4
