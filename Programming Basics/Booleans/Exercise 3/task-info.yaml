@@ -4,24 +4,24 @@ files:
     visible: true
     placeholders:
       - offset: 95
-        length: 6
+        length: 22
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 95
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: 1lUvstwUv5okesmNRtAv6YVepGj0NlK6MJUQ8vjr0xE=
-      - offset: 149
-        length: 6
+      - offset: 165
+        length: 20
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 149
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: OcU2lKYad6PJzPV26TuN1cLTUbQJSmYPiFbh5Zmt1aU=
     encrypted_text: 4iLvDJtXaOqWnQqKRTcU6ekRFnQwvRivUzEOCZdj2z/KlvsX9L9Lqs+ed4VUGi+Z6ryf1AUUgSPqMNQO4MKJ5sOQWTMrhvCYfvAFSWANXazaunv7ZM61E7bP9MImy+E6rBl3/HXhwYc45N5DO0IyPzhAzy9G/h4E8hQML6P6hcaSZBXfuTtD4gLNfQnhYz9lJg92jLQU51OWGUhXRvEHWCHgdqRCkUVgQTzjO2iNTWKmOSNdaNRj8I0lEvThweHqib1OrfRbdEJIhS//oJ92yqWK3o66aLTSMrh0yMy04zPm1x5zXNYrx1Fn+wpJGShF/OoTvHz3iYiBnJMtzFicRw==
     learner_created: false
@@ -31,5 +31,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Booleans+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 13 Nov 2023 22:13:38 UTC"
 record: -1

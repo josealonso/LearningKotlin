@@ -4,36 +4,36 @@ files:
     visible: true
     placeholders:
       - offset: 130
-        length: 1
+        length: 13
         placeholder_text: 0
         initial_state:
           length: 1
           offset: 130
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: +upyuuYPnr1yp93SWCFvvA==
-      - offset: 158
-        length: 6
+      - offset: 170
+        length: 5
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 158
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: eqBJL1C509+r1J2a7zkF/Q==
-      - offset: 181
-        length: 1
+      - offset: 192
+        length: 17
         placeholder_text: 0
         initial_state:
           length: 1
           offset: 181
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: sTnQ3LYhury3zKlq9Z+DlQpO5AVFTPERTbbGT7GSq/Q=
-      - offset: 210
+      - offset: 237
         length: 6
         placeholder_text: TODO()
         initial_state:
@@ -41,27 +41,27 @@ files:
           offset: 210
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: yZv5QOtlKs0/wFxV1B1hvw==
-      - offset: 236
-        length: 1
+      - offset: 263
+        length: 25
         placeholder_text: 0
         initial_state:
           length: 1
           offset: 236
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: sTnQ3LYhury3zKlq9Z+DlSDsj4HbJXLB+Gh4FYqvS7w=
-      - offset: 268
+      - offset: 319
         length: 6
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 268
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: yZv5QOtlKs0/wFxV1B1hvw==
     encrypted_text: +RXl2ExswN+QyFjhk9TWrvn8+vfWV+ifd1q4oWGLyvsDr19h9rGyPKbu06nhwzs3iG8vm6xGHb2ShpXsgajRrRaWlE2ytVMQ3xrdV53jWdfDZKtvH0Wl5QaPoh1yRnxiWLONYJ4FYJKQ1Rlk7L94YCZ7YvmSi1e8qN5M3SdwPM7l4RrwU7gk0T7r3p5shSU+KQshyIj7u4VC0M6GdsdE42y9vKWXU8ALmlDLahl7KdekgmIPvDmrUSdUMX5bg8zKMN2kieT2DVNVLproWQ+oSrnaCtpnd/fedlcw6/1TQuJgusErWeKclRIzlLU2jGOlbFF2dJqoSWSNFdreQVoSaiwA5nKPDw9bw+j4KAU6citJOvZLAM+VMkh8GpHw3lf3
     learner_created: false
@@ -71,5 +71,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Number+Types+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 13 Nov 2023 16:50:41 UTC"
 record: -1

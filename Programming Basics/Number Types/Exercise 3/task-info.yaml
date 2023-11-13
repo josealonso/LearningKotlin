@@ -4,24 +4,24 @@ files:
     visible: true
     placeholders:
       - offset: 105
-        length: 6
+        length: 18
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 105
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: OqFt0EJTNyKNOhAKU5ABeQyANB6mcCokRSAxWFVxKbY=
-      - offset: 164
-        length: 6
+      - offset: 176
+        length: 18
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 164
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: BnDhh0X5IgsYbSA3h1HPDDDW8eanr5l5872l/1APZ+M=
     encrypted_text: +RXl2ExswN+QyFjhk9TWrkgPg3miOblI7iQQQBu/6OUGL1u0C+LcxeGL6LS7OhKdCUQkTKAiZKxJv6OWyJ2zKHUqcfI8/fmfV8VczS33I68NLKTkODTgw5deciOE+kBflUzZid9EcMkKMbeVeKSAADeHwcSKrW6sK+8oAle9nGGwXht0Dpm5x6dxqCgjR7vwOuFus5Cb2thDBgGqF8UaelLYAhV/XET5LDTcSv61OsHgsPx9dzRkmNRgG/tORhEldWfNYPb9AzToD4Xc9+LyNkipBINh8Tp8uXGI4m5Db/rBzwdokeEdrVgr6a3PWOnWUUkUPbRNPnwtOQ4hii2VfbNP21r+DljNYoZYaha+o7D5BWUVaXr7cwiHeySdnzKT
     learner_created: false
@@ -31,5 +31,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Programming+Basics+%2F+Number+Types+%2F+Exercise3
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 13 Nov 2023 16:53:52 UTC"
 record: -1
