@@ -2,6 +2,8 @@
 package loopingAndRangesExercise5
 
 fun main() {
-  val s = "abcd"
-
+    val s = "abcd"
+    for (c in s) {
+        println(c)
+    }
 }
