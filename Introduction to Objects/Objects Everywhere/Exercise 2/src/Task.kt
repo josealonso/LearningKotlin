@@ -5,7 +5,7 @@ fun isPalindrome(s: String): Boolean =
   s.reversed() == s
 
 fun isPalIgnoreCase(s: String): Boolean =
-  TODO()
+  isPalindrome(s.lowercase())
 
 fun main() {
   println(isPalIgnoreCase("Mom"))  // true

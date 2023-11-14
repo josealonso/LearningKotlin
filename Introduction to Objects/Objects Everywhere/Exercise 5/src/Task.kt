@@ -2,8 +2,8 @@
 package objectsEverywhereExercise5
 
 fun main() {
-  val r = IntRange(0, 10)
-
-  val s = "abc"
-
+    val r = IntRange(0, 10)
+    r.sum()
+    val s = "abc"
+    s.reversed()
 }
