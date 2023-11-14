@@ -3,15 +3,15 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 158
-        length: 6
+      - offset: 157
+        length: 169
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 158
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: 95Dj1yFISxFI5GcWEfmk9gT4RoVwv1O0YUk9LVnR9u3YEP+tBCkRLjKgdCA63WGI
     encrypted_text: mp4T/A/Sdy11w9JP38VuCrBGEbdx2F0cfdXXD9ISe83a5tKXRLmT/4fFuHDaou5FesX0l7YDrx3QdKUMc1SreHZ3FVKN3hn9zQXI04sqDAeRpG6JVGwtM9rnxBAhDaVAbT0OyqURB4idhrV3/89W6WVwy4MxeSdizkASKPoI2B9b7Qrwl+SajKJMX95k03YjMgLxfHINDCFHYLXcdCbifvzro4W1F6pczAm7tjmx0tajmL/bAcB+BxuD/Rj4g4f9wp1Yxvq9/2tK5E/mz0Xdm/Ji48Ekp8Xvu5apecjYihxDXU1gw9FwQvpJDhmr5tX8xIl6PjEk6JGcEIWkGdi+TssEnuCeFRg1DvfwrDdcFAk/WYht91L2uBJ5V0znkDzylMF4CY7XFr6NgWAI2Mgt01lafv5MPGdrBUOq6FXcW/k08WMTp3KfhG3ITDtl+1Fl
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+vararg+Arguments+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 14 Nov 2023 17:11:37 UTC"
 record: -1
