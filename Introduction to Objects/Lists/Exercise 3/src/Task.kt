@@ -3,7 +3,9 @@ package listsExercise3
 import atomictest.eq
 
 fun checkAnagrams(s1: String, s2: String): Boolean {
-  TODO()
+  val list1 = s1.toList().sorted()
+  val list2 = s2.toList().sorted()
+  return (list1 == list2)
 }
 
 fun main() {

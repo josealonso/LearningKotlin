@@ -3,15 +3,15 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 118
-        length: 6
+      - offset: 116
+        length: 96
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 118
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: i+Wljt6hWRuo3wrsM34UISLMzAfMsqbXQsU9Y9/VxjjmzXG1lFbXW1MrQ1UUCyfmbsSodXdF6rV4bSwEEMw46Q==
     encrypted_text: 8YLBCvkNKqOTQkmcaehG9gioU6Io8S8Slkh3nRJOF+k1SHFLp57d2+CTWyH7kKoHzJevscQek6PQ6x0G6/y2S8X1lCEfXQ5CqXmSCsKN4z0NOqNv/6rOHw3Yh+A04xTxzqqNFpUKwSnmOKNNJAF/ZxLAO2eLLS0trmEZ83RgaIRyWQmfdE1uEIjDQs9/rVLsR/5Fg7z23zi7Ct/bFiBttNRVDrv2v2UFxSLvMuonkz6XCzsqyGQtJLWxzLrR/4v7bz8MtD+giqyIWuahFxQjSGR4Yjgn5w/LlybsMChtR0DReRVYDRKLZyczIojJOAj2RPjBDWrwYKwkBD/OnAMtdVB8rzoOZ/1xR/SPAdStHVZxSxQ7YBXb9uWf8jaZpXcXVX6WIS9et/Kpw7mQxuBr7lCa9meC4b3xld2lVEey2QkHknB214nP9cj68rdEj2vNNfLGW2xEq467awHmlVfUtg6NHQ/p4Yxtt9q5cg4aZxchWXNzsfc+XzGmbjm4ljwSC+ieozT0KBH3qjEvPoQSx4hlTCJUQ1y5VOa3bA0VO8DGxMZEs8pqdSSwKu2nXp1xWBGENhAW5ZMZdYSHfhhEtbBmiUBsYz2y5Td/spnyHZa0QowxQUt6RNh0zC/fVZXxvuIFlLunfk9/ZI/ey7oY1DHPMa8Nynyq9qdH6bT1GQln+OoG8DNHxE88px2ZrlBXlhG/ZuI9jJasMlczkUlkmBmcB5S2z2yEk78blJH8xjRNk9KKMo7kB6eRAQiyxNJnhyOrHQJFplokmvh6zDn2SZr1Qnb52J41Z8Uj5DYQHFhFZCuzMWeqXgoXAkHPeLkpTqhhA3Plb4MjcBnTeYHSLA==
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Lists+%2F+Exercise3
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 14 Nov 2023 16:32:16 UTC"
 record: -1
