@@ -20,11 +20,11 @@ files:
           length: 15
           offset: 186
         initialized_from_dependency: false
-        selected: false
+        selected: true
         status: Unchecked
         encrypted_possible_answer: IE4VUcOuz/EDLJJIHeHpu6cIDGAMNTZeRAuGEmlm1xc=
       - offset: 282
-        length: 17
+        length: 43
         placeholder_text: // add more tests
         initial_state:
           length: 17
