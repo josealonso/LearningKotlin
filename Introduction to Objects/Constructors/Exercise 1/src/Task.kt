@@ -1,8 +1,11 @@
 // Constructors/Task1.kt
 package constructorsExercise1
 
-// TODO
+class Floating(val d: Double) {
+    override fun toString() = d.toString()
+}
 
 fun main() {
-  TODO()
+    val float2 = Floating(2.2)
+    println(float2)
 }
