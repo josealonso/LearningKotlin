@@ -2,11 +2,15 @@
 package summaryIExercise6
 
 fun everyFifthNonSpace(s: String) {
-  TODO()
+    var i = 1
+    for (ch in s) {
+        if (ch != ' ' && i % 5 == 0) println(ch)
+        if (ch != ' ') i++
+    }
 }
 
 fun main() {
-  everyFifthNonSpace("abc d e fgh ik")
+    everyFifthNonSpace("abc d e fgh ik")
 }
 /* Output:
 e
