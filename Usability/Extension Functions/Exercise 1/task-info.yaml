@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 137
-        length: 6
+        length: 28
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 137
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: esEUVtmseNT3JlCwM7LlBBxWfI8Yc1pTtB2LbizVcvY=
     encrypted_text: oZOP1x7C6RJ/ZY2yDn9aUriAeWOjvbkAi39tpqvy6s0jkuH2UqfF4duQ3hpkZkOM6P5JwfcNfgNiY6TZe58ONOfx+EktnepMHobg+zp4TtabcN/v2835+DSl9/zu7nNnXzw/gV32i++cz9SsVmqbFsAWwZnsH3zvbMw53oHXOW2dwHdMm7wPBQAGkMw/SKIdlEnEvH4rwuUyWpv7eRd8iyzAPvv3MensYSEGCpwf67MCPFIKb8kHfQA1dUufsr6NHtI5R66Qe9wNrBACk5VFhSvDgNkIeWTnf4Z5qR7zgZA=
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Extension+Functions+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 13:25:12 UTC"
 record: -1

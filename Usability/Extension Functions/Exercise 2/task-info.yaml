@@ -4,24 +4,24 @@ files:
     visible: true
     placeholders:
       - offset: 116
-        length: 6
+        length: 28
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 116
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: bZ6YXCZKYjIOqpR/0+iVdQ==
-      - offset: 152
-        length: 6
+      - offset: 174
+        length: 13
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 152
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: wNXuMApIiBOivJ7acZekUA==
     encrypted_text: oZOP1x7C6RJ/ZY2yDn9aUpRnr1u26NVfHZKIJmqX4naWpQ30dOJ5yx1P/JmCIQmkC8KcJPfx6gkXuMDq4Afi8W7huD7jy9j97So7PoImthmsyyHya6SrEohCkeS1mUIc/UyTc0MFgcPpqTt9VCYEpEZIvt812bXdNmn4T+xzFJd/a2BIuCBKKWUa6BVjVXH68jCQZZD+hhTuT6he2Gga/ILRoPomMWVgMrAjpcurc0U1FjL/yYw8+TSXjlp/LbMn/ZBFLbd9xfbTa/rhtpuHZkFjtVAVQiNlAah8apgNfPw12ZGLYoZ53oK2n0rQj9do
     learner_created: false
@@ -31,5 +31,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+Extension+Functions+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 13:28:25 UTC"
 record: -1
