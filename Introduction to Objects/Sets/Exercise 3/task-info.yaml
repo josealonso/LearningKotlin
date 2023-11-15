@@ -3,55 +3,55 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 248
-        length: 15
+      - offset: 249
+        length: 153
         placeholder_text: // countPercent
         initial_state:
           length: 15
           offset: 248
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: H+tAktj5521Xsou4lnjdyqimEG0v5hHnBVYn7v0ElxjwhnI7XmaUupeXp6iEsH7ojwBSzVpne2/IoCTM4oyRaA2HVqwTK9DAyXlovzIZXBYpf+LQUrWqUHfBH0F/av9gvjmI1MAyFMFbZrQ5YEwAIuiylPrmNDHQBS6V9S94rOKlAFa5mmSGwSkYazzgnPWm9hWnXqGg7MeZsAyGZMFv8g==
-      - offset: 319
-        length: 6
+      - offset: 456
+        length: 36
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 319
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: wFdcDa4Jk0REBcaLTOFraGRwb+Y3uY0n6Pe6k2tg/s42SjwYL9TIbOegVNi9HIfb
-      - offset: 382
-        length: 6
+      - offset: 549
+        length: 35
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 382
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: icnwH7PmrPV4P/5OekZYrxLJeJYN7cegxkHyCCfbeufgZzucAkzpO2XN2gMBIuCT
-      - offset: 447
-        length: 6
+      - offset: 643
+        length: 39
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 447
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: eE/6bgGC0u+w5Gi932WfQHCSCn/Kzv0uXy3tP6XpfyBEF3Sv7MzNIefM2/mcYst6
-      - offset: 510
-        length: 6
+      - offset: 739
+        length: 77
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 510
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: GXNKJJku45fIie79LolaEVhkDaw98aCJpf21u2LilW8kKF0EZfdc7K5K9jxM/ALrfar1gHwT/hZkiQWazlilWUbveOv2/oUT7OMYgApyhWM=
     encrypted_text: G4TKh8conWDb6MX5XLRCI+Gbzia1k8kgebt7zxyyZvcA8yhl3KxDKLKR1KYLSrA46zLXD0JyEIKVAmcX70QvZzWIzmKW1gfpb2h9P96dK2qnfdGStVWtmifZnH1tv/QKOSebgOoXnxWa/TmyMk7liSSJ5o0J8KVw3+j/vTT5XMTmSldBf6zCEbjo+b+5kHwWeMOhcMqY/MKLTKFopY7XOIC6uTJ8/jpS6AWsaKUs4ysOzmSjqoTsS4s1W03+83qMPGilhUvivVyAsq5xo4z036XjpUIB5c0neKW9JDm2cJ1hdG4jXr/X3KRKgFiHOWfTmZCAiVegDT68TDxQNmlNpxInaD0a8+0AOv0VEzGKpWDyqRNmzO7i5XcoufAFJy9kbHUrWH041qr28MWqMc1KzG5G8wKJ82DboSkeJLkZ330HL76kULnkHfxMWjueXJtE3zM4dhgYqs7EH1NnzSBtPtxZTCcNSx6bPHtozp7tZ9X0jEeilZH66zSwO/Sf4onjAOYdbBSpqAZfhJlvo6DaVcoPYx1gntcyoOvBO4nX/r3tBvrZ2YnRsRiyzVE9b1fZO/erkVpa+4CuXts85iIh3qnlAcN8jFnT6ueM5q0M4AuPKwFAtTqsSuvPIb+HMXe+9lYalrEtaJ4ojCH7df3iaBGN3c6o1Is14MctFYF+lcDXAtP8RB2QfFi86sY3VWAl89uD6zNA0f9Zytg0WYUPfiMGw2BbT1N3M+BhVu5U+0WP+Dj1m3iNIr2yt1mMcQ6t1dQmHuhkL32gIQ46zB7qEertV8IYFB8D2OYgCM27LAS8yG91F90kLKPl9bq7MBrDDCPkzvJtTCc2C46HKulosggO7M2MhNgKEEFozM1fxN12dgrfYPScjhPYstrLN9Uihr82SAD7fIU732E+hoRqmjxH/50uoEvXj2LUw4TKnBXsMVevVa0con9sUFf+sDXAtX9PFUPM+wJNKQILUugt72OwJqVTvjmES+uNtzpZOSaEn3fMbIrTFtSZ7+UxZnx/uRrB9/ioVGKVZp31zfGqMT8V1+m2qX9pY/xse+4kOYDSwqsFRAt9o6yAxyghepXZBsniMTdFHr6T+VOtBlhcmA==
     learner_created: false
@@ -61,5 +61,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Sets+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 01:04:10 UTC"
 record: -1

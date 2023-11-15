@@ -3,15 +3,15 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 109
-        length: 6
+      - offset: 108
+        length: 33
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 109
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: Hg9g+9lypRvWhW4Bp6z51a2iOKs+9xt/c0Nanqsmd1SP8X6ibA4KIYctrCoW3sI+
     encrypted_text: AKA4Lq6Xbw0E650X1Ea4NlIfbXlPKdS6ceEFU5B4VoqRznoKYc+MQ4OSEL3sRPwYPjxPRtE0s7Imr8qcFC0IZ3WwOAxsObcGE2ZFB5yo5cxBNnU7CyntHyzQQMISgZ0HOIo7bLb59lkY8KAM5YPBL86Hexus4m4zRKRf0Yd6WTMUvGRj1mRH6ft3Pw4hOEaEZ2lENZuJ7lwqYYqa/G0q9kb2HJXUIQTsNl4/4fSsEmzuqqgeVNTrdSu45iWUCzbs81b2LxzAmRv+obQFbaofB2C0lUIrDflcKGtynq4bu4Q=
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Sets+%2F+Exercise2
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Tue, 14 Nov 2023 18:47:03 UTC"
 record: -1
