@@ -3,15 +3,15 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 281
-        length: 6
+      - offset: 290
+        length: 159
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 281
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: M7jVnFa38qB8mXT1wT06+2QKY2hBHMPnK6TGcqxZ0113CFdfpbrujeovG+Z3MqNt+HPPZsvZzQ/8DBjtWhWHX7sKQIKzdbMlBdM9LDvjr8RNf8ny/LYTolMxuG2cLK/D38eCpjOK9OpUcxC7RCRI6ban5+pl+Y0gVWE2SeT0m9M=
     encrypted_text: e5p7URHubOvIAbafIRbuglugieoLwoO/CLP8QNCfiI1Vo2RZxFN7kuMc/39FsWe7eqvDXzqjtApmn7o5ZJR+oIOv5pkHjA+hsIriShD637itDiitWoZepuAkAQRCZhtu5bxG9wDbs84o/4qcuEnEqJ9XtfLYNASr05ME7X58DtdOW9DWLY+1Zm1/nu4F0ULSN3IUA2pCHzJTUw7NwSa//Qq4WicrO2LYN2sPwXBTZ6f0IyNRKU+mcxJmef8oLhtXVahKll0oDITAqrRsWt+bjXQNwS3DsGQu4RIsJed+8NgfBgmigCmSCjW/bU6g6WXTvtY4Hi3duQZrpCcHSg1g8QsiTaTGBROQOEPYiCWD803R+Lwo0GuW1POzvnRAwWd893KCg2e8v7hVkwiotCi0z1CniSMNQqIzYtIHr7MjD/RiOeABeujJC6Sd7xwuEmFgmtGnyHG+KR1Tt1S4bz2elCqOIG0d8sftKaNFlEZbPp5oDBPXU0orZGrYnDgoRxdeKWV5NaVJgX4UYpsZx2X4liTZW8A2aFpMeuiFd1k/TktU1eGNjwA+FxSRsYXZ2mDL0OCmES/33xbzDj8It43M7QgNWzXcrBsH6bK3e4UtdmFdtSUXLDQqsHjBynbpdMNTwDilCzncufACMrI3X0hmfnzSJyDnL18yzVn3Fd+sX0qU+px3Z6cpUP7qYweSRgs+4/H0t9HK1bnVTP7VTLQAYkmxK9vTDSvzUeEU6oWpWiMIgCG6Vc69GKLTT/J7BvDZ7Wsuivroh7INeDvzgMkYEt9xzur2kyOXzFYx5iyMI6Y=
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Maps+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 01:17:58 UTC"
 record: -1

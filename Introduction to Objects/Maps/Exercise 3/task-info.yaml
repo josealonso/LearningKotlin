@@ -3,38 +3,38 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 261
-        length: 20
+      - offset: 272
+        length: 27
         placeholder_text: MutableList<Hamster>
         initial_state:
           length: 20
           offset: 261
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: IepeiL6TX3OLWENgezryIqN6RAkv8Ta00HmHKn0z2yw=
-      - offset: 288
-        length: 24
+      - offset: 306
+        length: 18
         placeholder_text: mutableListOf<Hamster>()
         initial_state:
           length: 24
           offset: 288
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: SIyy2yIXw7uw2nSgM+URGA==
-      - offset: 420
-        length: 19
+      - offset: 454
+        length: 58
         placeholder_text: hamsters += hamster
         initial_state:
           length: 19
           offset: 420
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: ni4y0kmkZ0DjMAWk1a/b+DWBKcNRXzLIRwtmxIhsVtb2wYy3Tlk4z6vnF80AXT+u
-      - offset: 491
-        length: 168
+      - offset: 549
+        length: 26
         placeholder_text: |-
           {
               for (hamster in hamsters) {
@@ -49,7 +49,7 @@ files:
           offset: 491
         initialized_from_dependency: false
         selected: false
-        status: Unchecked
+        status: Solved
         encrypted_possible_answer: ft4qlVpq7W4VO+hakMOUaIusckPY1N/URkm6WW8fi8o=
     encrypted_text: A5u7FCAN4DCvkIu0l51WZ/hSsbkR7G5nQEiwbuO3ThL7fVUXFF213whPaduHlchn7QUwPGcrk8YlZUkc2u5swfznXq8bzTnJW/LltxSoQ8JaMlTPszUJAq/Zvba4HpAdDYoVdqE+FANaOCBLZGqVkxh2M/nbLVj9UzBlB99UU+ttmRXxdjFOsJxL5KoJCVahYknLYb+zwwPWzJHro5De3L0qcRArW/A2dVHKViEK5sAPs2CMB/5jzC4pCuq8Ja7Pt2cHsjpqmMdCcjTamljZGhLfkYzpWQ75MdBUNl8E5DHbMK7HWMOMq0Jq/5MZ1MhT4t0fbwHLo9nJ9RFRanqu6UfgwXCDK81xujgoxJWYs5hgfcZPBUMYtUM8WwhfVRqDMcAKOmon6gMrf+ARTwh3DQ1TjKo/cGg20VqQ7Wu78b80eGkeabaNQqCbKjqTPCnmCZcEgt6BgFLUKW/Aqu/WOczco616AZPEZkC9b4/2UJPjK9DizNKsnjWWIO6LSwlW/Pjai77DyeNjcftmMBSS1f/3hqsX7GuzVQ2+NuTWq9oSpc2q6VNHSwhxXI02/w/hS+V4qOGnCy8MEEHlAXWWwNc9Vf6BbaZ6x24iDaJjUJSRQjudy3HMz9wpNbrSTV92QelR59N0Gzi2Db/yeAHI7RHyE1JJEkl2PQFH6jXor69abDaf3VAZ0+kP1kdDcCRyx0PtTgP8LOrxfRfP20ar9SRExnajAtKee5OK55bh0N1IE5y3vcc0MpuF88bbrSWN+KmlXrJ+e79ME5Y36Jaic8ljVPzCyinKw5WnNDah4lee93rVdtd0HNgj4te480w0vPrH71LjXwVOaUeLtBBItmNlWCLmz5iLL0HJv6lTnUlILtwH0NVVPdXpDSKIrf2enLbXrvTlZceNcINXRLXskyFAYVDeWVDdkHZbWXB3DSiXSaGMyP/DKtYE0S+Kw5ZaRfKD0VYHK46YAazkV5onIZLqa4fGbdOMy085tkdghZiSN6tzTlJWm3Rh+y/5L2uecT3dWgnNYMyfojxcaJYaGsDM7zdWCatreqAzPxgFCuZJoziOfiC+txOaybBGaWuYLpocBVORh7OFHx3+Z23lZynQ8+g8hVvK+Iwob2tVdtyiU1gHVGG6+0gmXoLrIjaQrsdfkMX814J90cntY+0zssbsu6yWOwhQdzZfS3K5sXo=
     learner_created: false
@@ -59,5 +59,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Maps+%2F+Exercise3
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 01:48:31 UTC"
 record: -1
