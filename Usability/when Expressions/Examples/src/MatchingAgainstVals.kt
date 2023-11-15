@@ -6,14 +6,14 @@ fun main() {
   val no = "B"
   for (choice in listOf(yes, no, yes)) {
     when (choice) {
-      yes -> trace("Hooray!")
-      no -> trace("Too bad!")
+      yes -> println("Hooray!")
+      no -> println("Too bad!")
     }
     // The same logic using 'if':
-    if (choice == yes) trace("Hooray!")
-    else if (choice == no) trace("Too bad!")
+    if (choice == yes) println("Hooray!")
+    else if (choice == no) println("Too bad!")
   }
-  trace eq """
+  println eq """
     Hooray!
     Hooray!
     Too bad!

@@ -4,14 +4,14 @@ files:
     visible: true
     placeholders:
       - offset: 129
-        length: 6
+        length: 169
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 129
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: u5pRMGXB9+d7bVUcu7e/Td7yzpXxHUgdGaoK6DIS4x07lBMpnccrnvK1sf5Sx4l3oLsaTYA+1wDoOmhhm7/tvvR0rpDLLfp8WFtQj1WiX8//TfITSVp9HU50A+l5DTgvHqkdye8b3LJONLLBKAXOP9+Q1VNA5MK2hSF5NddB6OMw4kkwiEapH+RuIKfiM3jqaAyIJFJA+RUm/f97rFtg4YEWI+JBtooDwNGX4DJjhWo=
     encrypted_text: i0xfsfUXHlqwQzeT50pGtEWPd7e9yCJj+LWiLaXhdJ13IDarkYM0rw3loYCWVLnccwdb17Iv9EZbCSh7GCH1pVU1acH9rZDV+P6kO+QclMt5GZWQAqSmEeXeKxFzZZLMegVyDZq7Oo9Io4MPYYJu6dTYx9jIAbCDtFv2qbwLgYZyFNFma+QmZKSY+mx9sE7JegbpFH/6B6HtyFSEd2uFrZaOQ2Lna4aa+AmIrw3p9auHEPdr60/KLLirHdJHI7ZCuA7S3K7LFjWUQ6v4ahtPHaBnWahoN1ilXLm2D3Mz5kQlhV4gMxhKFOS0fzixXWq3
     learner_created: false
@@ -21,5 +21,10 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Usability+%2F+when+Expressions+%2F+Exercise2
-status: Unchecked
+status: Failed
+feedback:
+  message: Wrong value for temperature=25
+  time: "Wed, 15 Nov 2023 16:08:12 UTC"
+  expected: Hot
+  actual: Freezing
 record: -1
