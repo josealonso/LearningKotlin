@@ -1,36 +1,45 @@
 // Summary2/Task6.kt
 package summaryIIExercise6
+
 import atomictest.eq
 
-class Temperature {
-  private var current = 0.0
-  private var scale = "f"
+// I N C O R R E C T
 
-  fun setFahrenheit(now: Double) {
-    current = now
-    scale = "f"
-  }
-  fun setCelsius(now: Double) {
-    current = now
-    scale = "c"
-  }
-  fun getFahrenheit(): Double =
-    if (scale == "f")
-      current
-    else
-      current * 9.0 / 5.0 + 32.0
-  fun getCelsius(): Double =
-    if (scale == "c")
-      current
-    else
-      (current - 32.0) * 5.0 / 9.0
+class Temperature {
+    private var current = 0.0
+    private var scale = "f"
+
+    var farenheit: Double = 0.0
+        get() {
+            if (scale == "f")
+                return field
+            else
+                return field * 9.0 / 5.0 + 32.0
+        }
+        set(value) {
+            field = value
+            scale = "f"
+        }
+
+    var celsius: Double = 0.0
+        get() {
+            return if (scale == "c")
+                field
+            else
+                (field - 32.0) * 5.0 / 9.0
+        }
+        set(value) {
+            field = value
+            scale = "c"
+        }
+
 }
 
 fun main() {
-  val temp = Temperature()
-  temp.setFahrenheit(98.6)
-  temp.getFahrenheit() eq 98.6
-  temp.getCelsius() eq 37.0
-  temp.setCelsius(100.0)
-  temp.getFahrenheit() eq 212.0
+    val temp = Temperature()
+    temp.farenheit = 98.6
+    temp.farenheit eq 98.6
+    temp.celsius eq 37.0
+    temp.celsius = 100.0
+    temp.farenheit eq 212.0
 }

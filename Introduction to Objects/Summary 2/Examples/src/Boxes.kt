@@ -12,7 +12,7 @@ private class Box(val dimension: Int) { // [2]
 }
 
 private fun countBox(box: Box) {        // [3]
-  trace("$box")
+  println("$box")
   count++
 }
 
@@ -23,8 +23,8 @@ fun countBoxes() {
 
 fun main() {
   countBoxes()
-  trace("$count boxes")
-  trace eq """
+  println("$count boxes")
+  println eq """
     Box volume: 64
     Box volume: 125
     2 boxes

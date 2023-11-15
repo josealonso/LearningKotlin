@@ -6,14 +6,14 @@ fun main() {
   // ints.add(11) // 'add()' not available
   for (i in ints) {
     if (i > 10) {
-      trace(i)
+      println(i)
     }
   }
   val chars = mutableListOf('a', 'b', 'c')
   chars.add('d') // 'add()' available
   chars += 'e'
-  trace(chars)
-  trace eq """
+  println(chars)
+  println eq """
     13
     [a, b, c, d, e]
   """

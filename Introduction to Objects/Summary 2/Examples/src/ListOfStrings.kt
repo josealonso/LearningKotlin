@@ -8,12 +8,12 @@ fun main() {
     All mimsy were the borogoves,
       And the mome raths outgrabe.
   """.trim().split(Regex("\\W+"))
-  trace(wocky.take(5))
-  trace(wocky.slice(6..12))
-  trace(wocky.slice(6..18 step 2))
-  trace(wocky.sorted().takeLast(5))
-  trace(wocky.sorted().distinct().takeLast(5))
-  trace eq """
+  println(wocky.take(5))
+  println(wocky.slice(6..12))
+  println(wocky.slice(6..18 step 2))
+  println(wocky.sorted().takeLast(5))
+  println(wocky.sorted().distinct().takeLast(5))
+  println eq """
     [Twas, brillig, and, the, slithy]
     [Did, gyre, and, gimble, in, the, wabe]
     [Did, and, in, wabe, mimsy, the, And]

@@ -5,11 +5,11 @@ import atomictest.*
 class GetterAndSetter {
   var i: Int = 0
     get() {
-      trace("get()")
+      println("get()")
       return field
     }
     set(value) {
-      trace("set($value)")
+      println("set($value)")
       field = value
     }
 }
@@ -17,8 +17,8 @@ class GetterAndSetter {
 fun main() {
   val gs = GetterAndSetter()
   gs.i = 2
-  trace(gs.i)
-  trace eq """
+  println(gs.i)
+  println eq """
     set(2)
     get()
     2

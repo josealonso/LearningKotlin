@@ -3,25 +3,25 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 115
-        length: 6
+      - offset: 116
+        length: 210
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 115
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: 2C17QYE8qLlYLpXbVgZdsVPnoCDrR7GjzVfqaxcTg/AAo3oI9sugGz6L4ZJgFDHM2r33ZzP1HO2HE2bHhmhG/QzMcHKOHYwC8Jabk2C7jhwRJn09nsUFP/lfKeGpMKxT47If0Huy7Wo9N+XbtjsjkXzISDfFvZhzfj7zrwULCDMAyUj3SZLKAH8fjmHWwGv5ng5sbhhyhT1ewFnBe4yzPMMIvu42P1aNI4L5mJLdlll3yMyJ8jXIAV5UdH9U4Kt2
-      - offset: 167
-        length: 6
+      - offset: 383
+        length: 46
         placeholder_text: TODO()
         initial_state:
           length: 6
           offset: 167
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Failed
         encrypted_possible_answer: gCOz2etnUvUw1UiTrz7TWxEQ5u/Mbwg5uqH+wSdH/Y4dLJJRehqdZi79W5d6M5Dc8F0KFUNdWo1fL5J0pssDjq6gGRxCnPoGwTV3oOUf0vLZN4zxOzFS9wox2NpSiixInk/7FkJ08QJA23u4zKqbfQgSraF8HpRePwVGLygVTTDblLSHbkQAWHyeUqd9s01wW9e/HaddYgWFnVIIbCyRtixNXZEgpyfdfAvMAHfVR67Q3kbeFFRhkJzhpN4eKUeP29wKwQKdkBpHw3+XDb4nRw==
     encrypted_text: TX8XoGYluYS7eyKNpg22Bi2RIQdqmWMobemPzn9vRFFahRyjUt4O5BWd8F+thtzJ2uSmV6wkTeoxM/dZw7pWr28Xex3Xgo66IXSd8OMZ3Pk4Z2lwfoUfFtIBdwW9DrlVAp4p1wYTBDJJ7YlPPAHymsDAU1KXQugmG09C3VXyhxHz9B6P7Q/OEdI4QpaSJBdEgfyTdsrNcOSZBzRu0aoWlJObv5hK9T2rqWJy2odpDCn5ZEQ8+P/CLe8aWJz2+G8GG8DTL5J1x5EghwU71W/RuJJqYt3O03k5oqcC8CzyEnst5KDY4EHFCfqkQpPD62t5wZCT8q/zUGvPfouHkK7BuHhISGLOBZNdvLxeVGQLXxfRZmRzehS1CJyok95aSpX3xgHxiLOzTBy7CEj1J0IuZaOeodEmTAWGphhT0wPkXr0=
     learner_created: false
@@ -31,5 +31,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Summary+2+%2F+Exercise1
-status: Unchecked
+status: Failed
+feedback:
+  message: Compilation Failed
+  time: "Wed, 15 Nov 2023 13:13:39 UTC"
 record: -1

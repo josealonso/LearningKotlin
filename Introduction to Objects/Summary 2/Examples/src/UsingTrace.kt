@@ -2,10 +2,10 @@
 import atomictest.*
 
 fun main() {
-  trace("Hello,")
-  trace(47)
-  trace("World!")
-  trace eq """
+  println("Hello,")
+  println(47)
+  println("World!")
+  println eq """
     Hello,
     47
     World!
