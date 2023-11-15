@@ -5,11 +5,11 @@ import atomictest.*
 class Default {
   var i: Int = 0
     get() {
-      trace("get()")
+      println("get()")
       return field       // [1]
     }
     set(value) {
-      trace("set($value)")
+      println("set($value)")
       field = value      // [2]
     }
 }
@@ -17,8 +17,8 @@ class Default {
 fun main() {
   val d = Default()
   d.i = 2
-  trace(d.i)
-  trace eq """
+  println(d.i)
+  println eq """
     set(2)
     get()
     2

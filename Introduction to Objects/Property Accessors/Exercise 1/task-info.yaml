@@ -3,15 +3,15 @@ files:
   - name: src/Task.kt
     visible: true
     placeholders:
-      - offset: 396
-        length: 31
+      - offset: 444
+        length: 55
         placeholder_text: /* add 'empty' property here */
         initial_state:
           length: 31
           offset: 396
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
+        selected: true
+        status: Solved
         encrypted_possible_answer: xZh0MuPGJyHenMSQf9fIDIUa8wJ4Oogbnm8ei5uXLw3PQt1qFpbuBBkw2Gfv8yBvOZgt3hFNBSEODpOkEG67mA==
     encrypted_text: A76BbnBafI1hSayxsKzchdSsbwW+tZ6mrF7qlojMMc9QC3Kq6WL7ngJ0VJmFWFJGyhSfa08LbT5+a/AdvuebZOS0/8A88hbBn+Y/4UsKCNXZukiXeNm6aQ1lBW/UHLkSFo0/XDGLuNFWNLNzuoL4fUL42N5JqIkRE1np/mDT+du0ZBwtClwbG7oS9UGu1uwxY9uqeHRulWQml4oceOETOh/gszzbkj2ZjMYEG/fFEf+LOx2rTOodwTnD9pd1AjwrWJ+GzG7fg2BOqRAIw34wi8moDLDUiKkPkqh3ilXFQAkNz4P23hNhnU9VKvPVQW61Tj5PMzZ3gSfsWF1MkTPqlekitEIlcY+H6bjrXKvpGLi9liHj8PXJDjXSMFwa5nSoJ/8b0TpjnvRXJmKTNFzeeq2LQZrWxFjqIo5Z56xMdCkSrGFG1/FvOqaBiWMOtiC7FQIyGtlQ7uTQzZPpeFbbgNUf1Y8sAdZZo+936bw5JusfrT3nMdBCfQ9Te75S+IB4CtTcZhPE4fT9B/EzC151GOLPR4viIjAciyDKrBpDCiHC1gGlGItvT16i5vz6hI8Nrkbtik2eaHhnVp+sMPMlnDrNs0cr/N7fNjuSgdm0gWYwDjuQRGxwmu5kLg0xMFXr1cpO9u9+jQe3mONtdNslpexEZpTgajsbtHnkmZvyI89mg8h+avjv1LMgZWlPj3Csw/6uk1HsYjoSmunxsbtpGSobgQE23gLX01S8ttUyHwWkly2qDXt6SO4pJYw29kc59eLWecMkv8o4ydikOB759PSz4OEu880WYHV1CcKZFiq1Bw3VIOLIZMDJvzhKshsk6nUTTXZQBRqwNiRr5QksjU3KI60NLSyhAPErWZI+EMozt6yEv4Hg7RTMPKFHLFA5YwKpNe4qc0kPEktT/RwYD3CWBIjhb2KZXclfR74+RZQcyX4tGlmAqc+QKXLWa6KikV0nyMuEeQ+wQ8oNfN1fMg==
     learner_created: false
@@ -21,5 +21,8 @@ files:
     learner_created: false
 feedback_link: |
   https://docs.google.com/forms/d/e/1FAIpQLSdkaliSwYkjiV21bZl0yP-In2g5p17sAQCfaGjyHx_QYMWTiQ/viewform?usp=pp_url&entry.189755027=Introduction+to+Objects+%2F+Property+Accessors+%2F+Exercise1
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 15 Nov 2023 10:43:17 UTC"
 record: -1
