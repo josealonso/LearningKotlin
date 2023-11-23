@@ -7,6 +7,16 @@ fun Shop.getSetOfCustomers(): Set<Customer> = customers.toSet()
 
 // Return a list of customers, sorted in the descending by number of orders they have made
 fun Shop.getCustomersSortedByOrders(): List<Customer> = customers.sortedByDescending { it.orders.size }
+
+//  Implement the following extension functions using the map and filter functions:
+
+// Find all the different cities the customers are from
+fun Shop.getCustomerCities(): Set<City> =
+        customers.map { it.city }.toSet() 
+
+// Find the customers living in a given city
+fun Shop.getCustomersFrom(city: City): List<Customer> =
+        customers.filter { it.city == city }
         
 //  ---------------------------------------------------------------------------------
 
