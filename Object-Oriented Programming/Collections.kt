@@ -53,6 +53,13 @@ fun Shop.customerNameToCityMap(): Map<String, City> =
 // Use "groupBy" to build a map that stores the customers living in a given city
 fun Shop.groupCustomersByCity(): Map<City, List<Customer>> =
         customers.groupBy { it.city }
+
+// Return customers who have more undelivered orders than delivered    
+fun Shop.getCustomersWithMoreUndeliveredOrders(): Set<Customer> = 
+    customers.filter { 
+        val (delivered, undelivered) = it.orders.partition { it.isDelivered == true }
+        undelivered.size > delivered.size
+    }.toSet()
         
 //  ---------------------------------------------------------------------------------
 
