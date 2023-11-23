@@ -49,7 +49,11 @@ fun Shop.customerToCityMap(): Map<Customer, City> =
 // Build a map from the customer name to their city
 fun Shop.customerNameToCityMap(): Map<String, City> =
         customers.associate { it.name to it.city }    
-    
+
+// Use "groupBy" to build a map that stores the customers living in a given city
+fun Shop.groupCustomersByCity(): Map<City, List<Customer>> =
+        customers.groupBy { it.city }
+        
 //  ---------------------------------------------------------------------------------
 
 data class Shop(val name: String, val customers: List<Customer>)
