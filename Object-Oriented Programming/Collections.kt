@@ -122,6 +122,17 @@ fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int =
 
 fun Customer.getOrderedProducts(): List<Product> =
         orders.flatMap(Order::products)
+
+// Sequences allows to perform operations lazily rather than eagerly.
+// The previous functions using sequences
+fun Shop.getNumberOfTimesProductWasOrdered(product: Product): Int = 
+    customers
+    .asSequence()
+    .flatMap(Customer::getOrderedProducts)
+    .count{ it == product }
+
+fun Customer.getOrderedProducts(): Sequence<Product> = 
+        orders.asSequence().flatMap(Order::products)
         
     
 
