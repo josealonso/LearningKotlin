@@ -60,6 +60,18 @@ fun Shop.getCustomersWithMoreUndeliveredOrders(): Set<Customer> =
         val (delivered, undelivered) = it.orders.partition { it.isDelivered == true }
         undelivered.size > delivered.size
     }.toSet()
+
+// Return all products the given customer has ordered
+fun Customer.getOrderedProducts(): List<Product> =
+//     orders.flatMap { it.products }  // the same  
+    orders.flatMap(Order::products)
+//     orders.map(Order::products)   // List<List<Product>> 
+
+// Return all products that were ordered by at least one customer
+fun Shop.getOrderedProducts(): Set<Product> =
+    customers.flatMap(Customer::getOrderedProducts)
+    .toSet()
+
         
 //  ---------------------------------------------------------------------------------
 
