@@ -3,10 +3,11 @@
 // For example, operations that transform a collection into another one, starting with 'to': toSet or toList.
 // Implement the extension function Shop.getSetOfCustomers(). The class Shop and all related classes are given.
 
-
 fun Shop.getSetOfCustomers(): Set<Customer> = customers.toSet()
 
-
+// Return a list of customers, sorted in the descending by number of orders they have made
+fun Shop.getCustomersSortedByOrders(): List<Customer> = customers.sortedByDescending { it.orders.size }
+        
 //  ---------------------------------------------------------------------------------
 
 data class Shop(val name: String, val customers: List<Customer>)
