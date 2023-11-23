@@ -89,6 +89,23 @@ fun moneySpentBy(customer: Customer): Double =
         .map(Product::price).sum()
 //         customer.orders.flatMap { it.products }.sumOf { it.price }  // Provided solution        
 
+// Example with the fold function
+fun foldExample(): Int = 
+    listOf(1, 2, 3, 4)
+    .fold(1) { partProduct, element ->
+        element * partProduct
+     } // = 24
+
+// Return the set of products that were ordered by all customers
+fun Shop.getProductsOrderedByAll(): Set<Product> = 
+    customers.map(Customer::getOrderedProducts).reduce { orderedByAll, customer ->
+        orderedByAll.intersect(customer)
+    }
+
+fun Customer.getOrderedProducts(): Set<Product> =
+    orders.flatMap(Order::products).toSet()
+
+
 //  ---------------------------------------------------------------------------------
 
 data class Shop(val name: String, val customers: List<Customer>)
