@@ -2,7 +2,7 @@
 
 ### Lightweight syntax
 
-** Java **
+``` Java 
     public class PersonBuilder {
         private String name;
         private int age;
@@ -28,10 +28,11 @@
                 .age(30)
                 .build();
     }
+```
 
-
-** Kotlin **
+``` Kotlin
 val person = Person(name = "John", age = 30)
+```
 
 CONCLUSION: ** Named arguments ** make builders obsolete.
 ------------------------------------------------------------------------------
