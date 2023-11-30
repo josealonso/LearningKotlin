@@ -82,6 +82,36 @@ class Employee(name: String, age: Int, val employeeId: String) : Person(name, ag
 class Company(val name: String, val employees: List<Employee>)
 ```
 
+### Functional Programming
 
+#### Functions as first-class citizens
+Functions as parameters are easier to read and write:
 
+``` Kotlin
+fun processFile(file: File, action: (String) -> String): String {
+    val content = file.readText()
+    return action(content)
+}
 
+// Scala-like functions are possible if there is only one expression
+
+fun processFile(file: File, action: (String) -> String): String = action(file.readText())
+```
+
+``` Java
+String processFile(file: File, Function<String, String> actionFunction) throws IOException {
+    var content = file.readText();
+    return actionFunction.apply(content);
+}
+```
+
+``` Kotlin
+fun needsProcessing(file: File, predicate: (Long) -> Boolean): Boolean = predicate.test(file.length())
+}
+```
+
+``` Java
+public boolean needsProcessing(File file, LongPredicate predicateFunction) throws IOException {
+    return predicateFunction.test(file.length());
+}
+```
