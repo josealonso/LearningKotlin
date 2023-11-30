@@ -107,7 +107,6 @@ String processFile(file: File, Function<String, String> actionFunction) throws I
 
 ``` Kotlin
 fun needsProcessing(file: File, predicate: (Long) -> Boolean): Boolean = predicate.test(file.length())
-}
 ```
 
 ``` Java
