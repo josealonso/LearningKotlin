@@ -114,3 +114,18 @@ public boolean needsProcessing(File file, LongPredicate predicateFunction) throw
     return predicateFunction.test(file.length());
 }
 ```
+
+Deferred execution or lazy evaluation
+``` Kotlin
+fun writeToFile(file: File, block: () -> String) {
+    if (file.isFile)
+        writeStringToFile(file, block())
+}
+```
+
+``` Java
+public void writeToFile(File file, Supplier<String> block) throws IOException {
+    if (file.isFile()) 
+        writeStringToFile(file, block.get());
+}
+```
