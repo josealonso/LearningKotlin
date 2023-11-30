@@ -28,7 +28,7 @@
                 .age(30)
                 .build();
     }
-}
+
 
 ** Kotlin **
 val person = Person(name = "John", age = 30)
