@@ -202,6 +202,21 @@ if(booking != null) {
 - Most loved feature in Kotlin
 
 
+### Pattern matching
+
+#### When Expression with argument 
+
+Modern Java has Scala-like pattern matching, but nothing is returned, since it is not an expression.
+
+``` Kotlin
+fun wildMatch(p: Any?): String = when(p) {
+    is Int    -> "${p * 2}"
+    is Long?  -> "null or Long"
+    in 1..10  -> "Value is in 1-10 range"
+    else -> "The default"
+  }
+}
+```
 
 
 
