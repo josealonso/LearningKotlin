@@ -129,3 +129,88 @@ public void writeToFile(File file, Supplier<String> block) throws IOException {
         writeStringToFile(file, block.get());
 }
 ```
+
+### Null Safety
+
+In Java this is "solved" with the so called *defensive programming*
+
+``` Java
+// The root cause of defensive programming is a bad API contract
+interface ProductService {
+    public Integer getMaxRating(String productName);
+}
+```
+
+``` Java
+class Client {
+    public Integer showMaxRating(String productName) {
+        try {
+            Integer maxRate = productService.getMaxRating(productName);
+            if(maxRate != null && maxRate != -1) {
+                return maxRate;
+            }
+        } catch(Exception ex)  { }
+        return 0;
+    }
+}
+```
+
+``` Kotlin
+/*
+ Int? is a type itself
+ Int? extends Int
+ Any? extends Int?
+ Any? extends Any?
+*/
+// Nullable types makes the API contract explicit
+class ProductService {
+    fun maxRating(productName: String): Int? =  // Int? = Int | null
+        if (found) rating else null
+}
+
+class Client {
+    fun showMaxRating(productName: String) =
+        productService.maxRating(productName) ?: 0
+}
+```
+
+It is a clever design, because **Optional values are not used**. This avoids having to use wrappers.
+
+``` Kotlin
+class Booking(val destination: Destination? = null) 
+class Destination(val hotel: Hotel? = null) 
+class Hotel(val name: String, val stars: Int = null) 
+```
+
+``` Kotlin
+val booking = Booking(Destination(Hotel()))
+val stars = "*".repeat(booking?.destination?.hotel?.stars ?: 0)  // This line checks if the fields are null
+
+// After checking for not null a type is "smart casted" to its non-null type
+// from Booking? to Booking
+if(booking != null) {
+    println(booking.destination)
+}
+```
+
+**CONCLUSIONS**
+
+- Nullable types avoid NullPointerException (NPE)
+- Models get more expressive, capturing nullability
+- Less verbose than Options
+- Offers interoperability with Java
+- Most loved feature in Kotlin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
