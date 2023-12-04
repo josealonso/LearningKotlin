@@ -218,9 +218,9 @@ fun wildMatch(p: Any?): String = when(p) {
 }
 ```
 
- ### Using Kotlin from Java
+### Using Kotlin from Java
 
- Accessing properties
+#### Accessing properties
 
 ``` kotlin
 class Person(var name: String, val age: Int, var isEmployed: Boolean)
@@ -288,7 +288,7 @@ object Application {
 }
 ```
 
-A **lateint** property can be accessed both directly and with accessor calls:
+A **lateinit** property can be accessed both directly and with accessor calls:
 
 ``` kotlin
 class Person(val firstName: String, val familyName: String) {
@@ -316,6 +316,68 @@ public class Main {
 ``` 
 
 In objects, **lateinit** generates a static field similar to the @JvmField annotation.
+
+
+#### File facades and top-level declarations
+
+The Kotlin compiler puts top-level functions and properties into an automatically generated class which is called a *file facade*.
+
+```  kotlin
+// util.kt
+
+class Person(val firstName: String, val familyName: String)
+val Person.fullName
+get() = “$firstName $familyName”
+
+fun readPerson(): Person? {
+    val fullName = readLine() ?: return null
+    val p = fullName.indexOf(‘ ‘)
+    return if (p >= 0) {
+        Person(fullName.substring(0, p), fullName.substring(p + 1))
+    } else {
+        Person(fullName, “”)
+    }
+}
+```
+
+Will produce the following facade class:
+
+```  java
+public class UtilKt {
+
+    @NotNull
+    public static String getFullName(@NotNull Person person) {...}
+
+    @Nullable
+    public static Person readPerson() {...}
+}
+```
+
+The file-level @JvmName annotation allows to change the generated facade name:
+
+``` kotlin
+@file:JvmName(“MyUtils”)
+
+сlass Person(val firstName: String, val familyName: String)
+val Person.fullName
+get() = “$firstName $familyName”
+```
+
+Now, its Java usages will need to use the specified MyUtils name:
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(“John”, “Doe”);
+        System.out.println(MyUtils.getFullName(person));
+    }
+}
+```
+
+The file-level @JvmMultifileClass annotation allows to merge top-level declarations from multiple files into a single class.
+
+Note that facade classes are not available to the Kotlin code and are only usable by other JVM clients.
+
 
 
 
