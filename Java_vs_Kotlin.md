@@ -379,6 +379,28 @@ The file-level @JvmMultifileClass annotation allows to merge top-level declarati
 Note that facade classes are not available to the Kotlin code and are only usable by other JVM clients.
 
 
+#### Objects and static members
+
+On JVM, Kotlin object declarations are compiled into ordinary classes with the static INSTANCE field:
+
+``` kotlin
+object Application {
+    val name = “My Application”
+    fun exit() { }
+}
+```
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Application.INSTANCE.name);
+        Application.INSTANCE.exit;
+    }
+}
+```
+
+The @JvmStatic annotation makes object functions or property accessors available as *static methods*.
+
 
 
 
