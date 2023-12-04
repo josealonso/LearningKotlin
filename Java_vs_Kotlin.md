@@ -218,6 +218,107 @@ fun wildMatch(p: Any?): String = when(p) {
 }
 ```
 
+ ### Using Kotlin from Java
+
+ Accessing properties
+
+``` kotlin
+class Person(var name: String, val age: Int, var isEmployed: Boolean)
+```
+
+A Java code accessing the Person properties would look like this:
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(“John”, 25, false);
+        person.setName(“Alice”);
+        System.out.println(person.getName()); // Alice
+        person.setEmployed(true);
+        System.out.println(person.isEmployed()); // true
+    }
+}
+```
+
+A property can be exposed to Java clients by using the @JvmField annotation. 
+
+``` kotlin
+class Person(@JvmField var name: String, @JvmField val age: Int)
+```
+
+``` java
+public class Main {
+
+    public static void main(String[] args) {
+        Person person = new Person(“John”, 25);
+        System.out.println(person.age);  // 25
+        person.name = “Harry”;
+        System.out.println(person.name); // Harry
+    }
+}
+```
+
+@JvmField cannot be used if 
+- the property has non-trivial accessors.
+- the property is open or abstract.
+- the property is a *lateinit* one.
+
+When applied to a property of some named object, @JvmField behaves a little differently generating a static field instead of an instance one.
+
+``` kotlin
+object Application {
+    @JvmField
+    val name = “My Application”
+}
+``` 
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(Application.name);
+    }
+}
+```
+
+The same also goes for properties with the const modifier:
+
+``` kotlin
+object Application {
+    const val name = “My Application”
+}
+```
+
+A **lateint** property can be accessed both directly and with accessor calls:
+
+``` kotlin
+class Person(val firstName: String, val familyName: String) {
+    lateinit var fullName: String
+
+    fun init() {
+        fullName = “$firstName $familyName”
+    }
+}
+``` 
+
+```  java
+public class Main {
+   public static void main(String[] args) {
+        Person person = newPerson(“John”, “Doe”);
+        person.init();
+
+        // direct field access
+        System.out.println(person.fullName);      // John Doe
+
+        // accessor call
+        System.out.println(person.getFullName()); // John Doe
+    }
+}
+``` 
+
+In objects, **lateinit** generates a static field similar to the @JvmField annotation.
+
+
+
 
 
 
