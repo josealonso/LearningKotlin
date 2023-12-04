@@ -401,6 +401,24 @@ public class Main {
 
 The @JvmStatic annotation makes object functions or property accessors available as *static methods*.
 
+#### Changing the exposed declaration name
+
+The @JvmName annotation allows to change the name of the corresponding JVM methods, property accessors and the properties themselves.
+
+``` kotlin
+class Person(@set:JvmName(“changeName”) var name: String, val age: Int)
+``` 
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        Person person = newPerson(“John”, 25);
+        person.changeName(“Harry”);
+        System.out.println(person.getName());
+    }
+}
+``` 
+
 
 
 
