@@ -1,5 +1,14 @@
 ## Java versus Kotlin
 
+### Obvious differences
+
+- Semicolon is optional.
+- Strong type inference.
+- **val** versus **var**.
+- String templates.
+- Multiline strings
+- Expressions over statements.
+
 ### Lightweight syntax
 
 ``` Java 
