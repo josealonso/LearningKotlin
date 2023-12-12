@@ -1,24 +1,29 @@
-// Rewrite the following Java code using smart casts and the when expression:
 
-// public int eval(Expr expr) {
-//     if (expr instanceof Num) {
-//         return ((Num) expr).getValue();
-//     }
-//     if (expr instanceof Sum) {
-//         Sum sum = (Sum) expr;
-//         return eval(sum.getLeft()) + eval(sum.getRight());
-//     }
+// Argument matching and auto casting
 
-//     throw new IllegalArgumentException("Unknown expression");
-// }
+// Java
+// public static void process(Object input) {
+//   if(input instanceOf String) { 
+//     System.out.println(
+//             "got a string of length " + ((String) input.length);
+//  } else {
+//    ..
+//  }
+//}
 
-fun eval(expr: Expr): Int =
-        when (expr) {
-            is Num -> expr.value
-            is Sum -> eval(expr.left) + eval(expr.right)
-            else -> throw IllegalArgumentException("Unknown expression")
-        }
+fun process(input: Any): String {
+  val result = when(input) {
+    1 -> "one"
+    in 13..19 -> "teen"
+    is String -> "got a string of length ${input.length}"
+    else -> "whatever"
+  }
+  return result
+}
 
-interface Expr
-class Num(val value: Int) : Expr
-class Sum(val left: Expr, val right: Expr) : Expr
+fun main() {
+  println(process(1))
+  println(process(14))
+  println(process("hello"))
+}
+
