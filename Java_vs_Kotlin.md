@@ -6,7 +6,7 @@
 - Strong type inference.
 - **val** versus **var**.
 - String templates.
-- Multiline strings
+- Multiline strings, like in latest Java versions.
 - Expressions over statements.
 
 ### Lightweight syntax
