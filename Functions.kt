@@ -1,3 +1,4 @@
+// Funtions parameters are always immutable
 
 // Funcions can be single expressions, in this case "return" is not used
 fun greet(name: String): String = "Hello $name"
