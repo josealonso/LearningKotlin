@@ -39,6 +39,28 @@ val list: List<String>
 list.add(null)   // Compiler error
 ```
 
+### Overloading Methods
+
+```java
+void log(String msg) { ......... }
+void log(String msg, String level) { ......... }
+void log(String msg, String level, String ctx) { ......... }
+```
+
+In kotlin we declare only one function, because we have default arguments and named arguments.
+
+```kotlin
+fun log(
+    msg: String, 
+    level: String = "INFO", 
+    ctx: String = "main"
+) { 
+......... 
+}
+
+```kotlin
+log(level="DEBUG", msg="trace B")
+```
 
 
 
