@@ -62,6 +62,31 @@ fun log(
 log(level="DEBUG", msg="trace B")
 ```
 
+### Utility class with static methods
+
+```java
+final class NumberUtils {
+  public static boolean isEven(final int i) {
+    return i % 2 == 0;
+  }
+}
+```
+
+In some projects we may end up declaring the same utility function more than once.
+
+```kotlin
+fun Int.isEven() = this % 2 == 0  // Extension function
+
+2.isEven()
+```
+
+```kotlin
+val Int.isEven: Boolean          // Extension property
+  get() = this % 2 == 0
+
+2.isEven()
+```
+
 
 
 
