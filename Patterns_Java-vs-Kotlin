@@ -1,0 +1,65 @@
+### Optional Pattern
+
+In Java, Optional doesn't solve the NPE problem. It just wraps it and "protects" our return values.
+
+```java
+Optional<String> getCity(String user) {
+  var city = getOptionalCity(user);
+  if (city != null) 
+    return Optional.of(city);
+  else
+    return Optional.empty();
+}
+```
+
+It should not be used on parameters or properties.
+
+```java
+getPermissions(user, null);
+getPermissions(user, Optional.empty());  // Not recommended
+```
+
+Solution: Nullability is built into the type system.
+String != String
+
+```kotlin
+val myString: String = "hello"
+val nullableString: String? = null   // correct!!
+```
+
+```kotlin
+myString = null         // Compiler error
+nullableString.length   // Compiler error, since the checking has not been done
+```
+
+This works for parameters, return types, properties and generics.
+
+```kotlin
+val list: List<String>
+list.add(null)   // Compiler error
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
