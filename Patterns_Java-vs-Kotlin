@@ -145,8 +145,21 @@ object Singleton {
 }
 ```
 
+### Building maps
 
+```java
+var map = Map.of(
+    "key1", "value1",
+    "key2", "value2",
+);
+```
 
+```kotlin
+val map = MapOf(
+    "key1" to "value1",    // "to" is an extension function
+    "key2" to "value2"
+)
+```
 
 
 
