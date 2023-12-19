@@ -87,6 +87,36 @@ val Int.isEven: Boolean          // Extension property
 2.isEven()
 ```
 
+### Factory
+
+```java
+public class NotificationFactory {
+
+  public static Notification createNotification(
+        final NotificationType type
+  ) {
+      return switch(type) {
+        case Email -> new EmailNotification();
+        case SMS -> new SmsNotification();
+      };
+  }
+}
+```
+
+In Kotlin a function is used instead of an interface
+
+```kotlin
+//  This would be a code smell in Java
+fun Notification(type: NotificationType) = when(type) {
+    NotificationType.Email -> EmailNotification()
+    NotificationType.SMS -> SmsNotification()
+  }
+}
+
+val notification = Notification(NotificationType.Email)
+```
+
+
 
 
 
