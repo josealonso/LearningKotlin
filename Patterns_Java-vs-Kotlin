@@ -116,6 +116,34 @@ fun Notification(type: NotificationType) = when(type) {
 val notification = Notification(NotificationType.Email)
 ```
 
+### Singleton
+
+```java
+// Much code, it's not even thread-safe
+public final class MySingleton {
+    private static final MySingleton INSTANCE;
+
+    private MySingleton() {}
+
+    public static MySingleton getInstance() {
+        if (INSTANCE == null) {
+            INSTANCE = new MySingleton();
+        }
+        return INSTANCE;
+    }
+}
+```
+
+This pattern is built into the Kotlin language. It's lazy and thread-safe.
+
+```kotlin
+object Singleton {
+  val myProperty......
+  fun myInstanceMethod() {
+    ...............
+  }
+}
+```
 
 
 
