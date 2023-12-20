@@ -224,6 +224,55 @@ fun main() {
 }
 ```
 
+### Strategy pattern
+
+```kotlin
+data class Book(val title: String, val price: Double)
+data class Customer(val name: String, val membershipType: MembershipType)
+enum class MembershipType {
+    REGULAR, PREMIUM
+}
+```
+
+Without any pattern 
+
+```kotlin
+class DiscountCalculator {
+    fun calculateDiscount(book: Book, customer: Customer): Double {
+        return if (customer.membershipType == MembershipType.REGULAR) {
+            book.price * 0.1
+        } else {
+            book.price * 0.2
+        }
+    }
+}
+```
+
+```kotlin
+interface DiscountStrategy {
+    fun calculateDiscount(book: Book): Double
+}
+
+class RegularCustomerDiscountStrategy : DiscountStrategy {
+    override fun calculateDiscount(book: Book): Double {
+        return book.price * 0.1
+    }
+}
+
+class PremiumCustomerDiscountStrategy : DiscountStrategy {
+    override fun calculateDiscount(book: Book): Double {
+        return book.price * 0.2
+    }
+}
+```
+
+```kotlin
+class DiscountCalculator(val discountStrategy: DiscountStrategy) {
+    fun calculateDiscount(book: Book): Double {
+        return discountStrategy.calculateDiscount(book)
+    }
+}
+```
 
 
 
