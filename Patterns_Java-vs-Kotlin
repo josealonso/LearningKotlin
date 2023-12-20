@@ -161,7 +161,68 @@ val map = MapOf(
 )
 ```
 
+### Iterator
 
+This can be applied only to collections, not to user defined classes.
+
+```java
+List<String> list = new ArrayList<>();
+list.add("A");
+list.add("B");
+list.add("C");
+
+var iterator = list.iterator();
+while (iterator.hasNext()) {
+    String element = iterator.next();
+    System.out.println(element);   // A, B, C
+}
+```
+
+```kotlin
+val list = listOf("A", "B", "C")
+for (elem in list) {
+  println(elem)
+}
+```
+
+This can be applied to any class that has the **iterator** operator function defined.
+
+```kotlin
+class School(
+  val students: List<Student> = listOf(),
+  val teachers: List<Teacher> = listOf()
+)
+
+operator fun School.iterator() = iterator<Person> {  // Extension function
+  yieldAll(teachers)
+  yieldAll(students)
+}
+
+val mySchool = School()
+for (person in mySchool) {
+  println(person)
+}
+```
+
+Likewise, the operator function **compareTo** must be used to compare objects. 
+
+### Comparable
+
+```kotlin
+class School(val students: List<Student>, val teachers: List<Teacher>) 
+
+override fun School.compareTo(other: School) =
+    students.size.compareTo(other.students.size)
+
+fun main() {
+    val school1 = School(listOf(Student("John"), Student("Alice")), listOf(Teacher("Mr. Smith")))
+    val school2 = School(listOf(Student("Bob"), Student("Eve"), Student("Carol")), listOf(Teacher("Mrs. Johnson")))
+
+    if (school1 > school2) {
+        println("$school1 has more students than $school1")
+    }
+}
+```
 
 
 
