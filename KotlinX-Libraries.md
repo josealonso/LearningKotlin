@@ -51,6 +51,12 @@ TBD
 
 Main types: LocalDateTime, LocalDate, LocalTime, Instant, Clock, TimeZone.
 
+### Kotlinx.Collections.Immutable
+
+A List can be a MutableList, that might cause issues.
+This extended collection provides two main types: **PersistentList** and **ImmutableList**.
+Jetpack Compose "acknowledges" immutable types from this library.
+Compose can skip recomposition with immutable parameters.
 
 
 
