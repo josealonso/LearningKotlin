@@ -164,6 +164,15 @@ class Client {
 }
 ```
 
+Using the Optional type
+
+```java
+Optional.ofNullable(null)
+        .ifPresentOrElse(
+                email -> System.out.println("Sending email to " + email),
+                ()    -> System.out.println("Cannot send email"));
+```
+
 ``` Kotlin
 /*
  Int? is a type itself
