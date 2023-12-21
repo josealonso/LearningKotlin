@@ -14,7 +14,7 @@ As of 2023 they are the following
 - kotlinx.lincheck ---------------> alpha
 - kotlinx.benchmark --------------> alpha
 
-### kotlinx.serialization
+### Kotlinx.Serialization
 
 It doesn't use reflection (better performance), and works as a compiler plugin.
 It supports polymorphism.
@@ -39,6 +39,18 @@ println(string)   // {"username":"Alice", .....}
 val result = Json.decodeFromString<MessageEvent>(string)
 println(string)   // MessageEvent(username=Alice, .....)
 ```
+
+### Kotlinx.Coroutines
+
+- flow (cold flow)
+- StateFlow (hot flow) -----> represents changing state
+- SharedFlow (hot flow) ----> represents flow of events
+TBD
+
+### Kotlinx.DateTime
+
+Main types: LocalDateTime, LocalDate, LocalTime, Instant, Clock, TimeZone.
+
 
 
 
