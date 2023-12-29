@@ -44,8 +44,11 @@ inline fun foo(inlined: () -> Unit, noinline notInlined: () -> Unit) { ... }
     
 // Conclusion: When using inline functions, there is no extra object allocation and no extra virtual method calls. 
 
-
-
+//  2.- Keeping generic type information
+// Kotlin erases the generic type information at runtime, but for inline functions, we can avoid this limitation.
+// That is, the compiler can reify generic type information for inline functions.
+// All we have to do is to mark the type parameter with the reified keyword:
+inline fun <reified T> Any.isA(): Boolean = this is T
 
 
 
