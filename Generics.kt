@@ -15,6 +15,7 @@ assertTrue(res is String)
 val parameterizedClass = ParameterizedClass("string-value")
 val res = parameterizedClass.getValue()
 assertTrue(res is String)
+// ========================================================================= //
 
 // We have a producer class that will be producing a result of some type T. 
 class ParameterizedProducer<T>(private val value: T) {
@@ -36,9 +37,26 @@ val ref: ParameterizedConsumer<Double> = parameterizedConsumer
 assertTrue(ref is ParameterizedConsumer<Double>)
 // To achieve that using Kotlin, we need to use the in keyword on the generic type
 class ParameterizedProducer<in T>(private val value: T) ......
+// ========================================================================= //
 
+// Star Projections
 
+// It is used when we do not care about the specific type of value.
+fun printArray(array: Array<*>) { 
+    array.forEach { println(it) }
+}
 
+val array = arrayOf(1,2,3) 
+printArray(array)
+// When using the star projection reference type, we can read values from it, but we cannot write them because it will cause a compilation error.
+
+// ========================================================================= //
+
+// Multiple Upper Bounds in Generic Constraints
+fun <T> sort(xs: List<T>) where T : CharSequence, T : Comparable<T> { 
+    // The parameter T must implement the CharSequence and Comparable interfaces at the same time
+    ........
+}
 
 
 
