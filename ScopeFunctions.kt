@@ -31,5 +31,22 @@ fun main() {
     // Other example
     val numbers = mutableListOf("one", "two", "three", "four", "five")
     numbers.map { it.length }.filter { it > 3 }.let(::println)  // 5, 4, 4
+
+    // let is often used to execute a code block containing non-null values. 
+    // To perform actions on a non-null object, use the safe call operator ?. on it and call let with the actions in its lambda.
+
+    val str: String? = "Hello"   
+    // Without let
+    if (str != null) {
+        println("let() called on $str")        
+        str.length
+    }
+
+    // With let
+    //processNonNullString(str)       // compilation error: str can be null
+    val length = str?.let { 
+        println("let() called on $it")        
+        it.length
+    }
 }
 
