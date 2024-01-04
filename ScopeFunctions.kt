@@ -7,7 +7,7 @@
 */
 
 // 1.- let: executing a lambda on non-nullable objects or introducing an expression as a variable in local scope.
-data class Person(val name: String, var age: Int) {
+data class Person(val name: String, var age: Int = 0) {
     fun incrementAge(years: Int) {
       this.age = age + years  
     } 
@@ -80,7 +80,15 @@ fun main() {
         it.query(it.prepareRequest() + " to port ${it.port}")
     }
 
+// 4.- apply: It is used for code blocks that don't return a value and that mainly operate on the members of the receiver object. 
+//     The most common use case for apply is for object configuration. Such calls can be read as 
+//     "apply the following assignments to the object."
+//     It is useful when your lambda both initializes objects and computes the return value.
 
+    val bob = Person("Bob").apply {
+        age = 32
+    }
+    println(bob)
     
 }
 
