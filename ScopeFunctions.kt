@@ -63,5 +63,31 @@ fun main() {
     }
     println(firstAndLast)   // The first element is one, the last element is three
 
+// 3.- run: It does the same as "with" but it is implemented as an extension function. So like let, 
+//     you can call it on the context object using dot notation.
+//     It is useful when your lambda both initializes objects and computes the return value.
+
+    val service = MultiportService("https://mysite.com", 80)
+
+    val result = service.run {
+        port = 8080
+        query(prepareRequest() + " to port $port")
+    }
+
+    // the same code written with let() function:
+    val letResult = service.let {
+        it.port = 8080
+        it.query(it.prepareRequest() + " to port ${it.port}")
+    }
+
+
+    
 }
+
+
+
+
+
+
+
 
