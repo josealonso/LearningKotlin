@@ -13,16 +13,14 @@ data class Person(val name: String, var age: Int) {
     } 
 }
 
-// Without let
 fun main() {
+    // Without let
     val alice = Person("Alice", 32)
     println(alice)
     alice.incrementAge(3)
     println(alice)
-}
 
-// With let
-fun main() {
+    // With let
     Person("Alice", 32).let {
         println(it)
         it.incrementAge(3)
@@ -48,5 +46,22 @@ fun main() {
         println("let() called on $it")        
         it.length
     }
+
+// 2.- with: It is used for calling functions on the context object when you don't need to use the returned result. 
+//     In code, with can be read as "with this object, do the following."
+
+    val numbers2 = mutableListOf("one", "two", "three")
+    with(numbers2) {
+        println("'with' is called with argument $this")
+        println("It contains $size elements")
+    }    
+
+    // "with" can also be used to introduce a helper object whose properties or functions are used for calculating a value.
+    val firstAndLast = with(numbers2) {
+        "The first element is ${first()}," +
+        " the last element is ${last()}"
+    }
+    println(firstAndLast)   // The first element is one, the last element is three
+
 }
 
