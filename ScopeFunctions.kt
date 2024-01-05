@@ -89,7 +89,50 @@ fun main() {
         age = 32
     }
     println(bob)
-    
+
+// 5.- also: It is useful for performing some actions that take the context object as an argument. 
+//     Used also for actions that need a reference to the object rather than its properties and functions, 
+//     or when you don't want to shadow the this reference from an outer scope.
+//     When you see also in code, you can read it as "and also do the following with the object."
+
+    numbers2
+    .also { println("The list elements before adding new one: $it") }  // one, two, three
+    .add("four")
+    // .also(::println)    // It prints true
+    println(numbers2)   // one, two, three, four
+
+/* 
+   Other functions: takeIf and takeUnless﻿.
+   When called on an object along with a predicate, takeIf returns this object if it satisfies the given predicate. 
+   Otherwise, it returns null. So, takeIf is a filtering function for a single object.
+*/
+    val number = 3
+    val evenOrNull = number.takeIf { it % 2 == 0 }
+    val oddOrNull = number.takeUnless { it % 2 == 0 }
+    println("even: $evenOrNull, odd: $oddOrNull")   // even: null, odd: 3
+
+    val str = "Hello"
+    val caps = str.takeIf { it.isNotEmpty() }?.uppercase()
+    // val caps = str.takeIf { it.isNotEmpty() }.uppercase() //compilation error
+    println(caps)
+
+    // takeIf and takeUnless are especially useful in combination with scope functions
+    fun displaySubstringPosition(input: String, sub: String) {
+        input.indexOf(sub).takeIf { it >= 0 }?.let {
+            println("The substring $sub is found in $input.")
+            println("Its start position is $it.")
+        }
+    }
+
+    // The same function written without using takeIf or scope functions:
+    fun displaySubstringPosition(input: String, sub: String) {
+        val index = input.indexOf(sub)
+        if (index >= 0) {
+            println("The substring $sub is found in $input.")
+            println("Its start position is $index.")
+        }
+    }
+
 }
 
 
